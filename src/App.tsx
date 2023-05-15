@@ -17,6 +17,7 @@ function App() {
   if (!browserSupportsSpeechRecognition) {
     return <span>Your Browser doesn't support Speech to Text</span>
   }
+  console.log(transcript)
 
   return (
     <div className="App">
