@@ -56,7 +56,7 @@ function App() {
               onChange={e => setUserText(e.target.value)}
               onKeyDownCapture={handleKeyPress}
             />
-            <AwesomeButton style={{width: '100%'}} type="primary" onPress={handleTextToSpeechClick}>Start</AwesomeButton>
+            <AwesomeButton style={{width: '100%'}} type="primary" onPress={handleTextToSpeechClick}>Speech</AwesomeButton>
           </div>
         </div>
       </header>
