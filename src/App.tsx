@@ -47,7 +47,6 @@ function App() {
             <AwesomeButton type="primary" className='btn-control' onPress={() => SpeechRecognition.startListening()}>Start</AwesomeButton>
             <AwesomeButton type="danger" className='btn-control' onPress={() => SpeechRecognition.stopListening()}>Stop</AwesomeButton>
             <AwesomeButton type="secondary" className='btn-control' onPress={resetTranscript}>Reset</AwesomeButton>
-            <p>{transcript}</p>
             <input 
               type="text" 
               className="App-Input" 
