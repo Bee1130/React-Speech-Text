@@ -40,23 +40,23 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src={microphoneImg} className="App-logo" alt="microphone" />
         <div>
-          <img src={microphoneImg} className="App-logo" alt="microphone" />
-          <div>
-            <p>Microphone: {listening ? 'on' : 'off'}</p>
+          <p>Microphone: {listening ? 'on' : 'off'}</p>
+          <div className='btn-group'>
             <AwesomeButton type="primary" className='btn-control' onPress={() => SpeechRecognition.startListening()}>Start</AwesomeButton>
             <AwesomeButton type="danger" className='btn-control' onPress={() => SpeechRecognition.stopListening()}>Stop</AwesomeButton>
             <AwesomeButton type="secondary" className='btn-control' onPress={resetTranscript}>Reset</AwesomeButton>
-            <input 
-              type="text" 
-              className="App-Input" 
-              placeholder="Text" 
-              value={userText}
-              onChange={e => setUserText(e.target.value)}
-              onKeyDownCapture={handleKeyPress}
-            />
-            <AwesomeButton style={{width: '100%'}} type="primary" onPress={handleTextToSpeechClick}>Speech</AwesomeButton>
           </div>
+          <input 
+            type="text" 
+            className="App-Input" 
+            placeholder="Text" 
+            value={userText}
+            onChange={e => setUserText(e.target.value)}
+            onKeyDownCapture={handleKeyPress}
+          />
+          <AwesomeButton style={{width: '100%'}} type="primary" onPress={handleTextToSpeechClick}>Speech</AwesomeButton>
         </div>
       </header>
     </div>

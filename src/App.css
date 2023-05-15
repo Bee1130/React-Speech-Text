@@ -33,10 +33,6 @@
   }
 }
 
-.btn-control {
-  margin: 0 5px !important;
-}
-
 .App-Input {
   display: block;
   width: 100%;
@@ -56,4 +52,10 @@
 
 .App-Input:focus{
   border: 2px solid rgb(124, 138, 255);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
