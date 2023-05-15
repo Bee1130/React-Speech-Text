@@ -16,6 +16,7 @@
   /* justify-content: center; */
   padding-top: 150px;
   font-size: calc(10px + 2vmin);
+  border: 1px solid green;
   color: white;
 }
 
@@ -34,4 +35,25 @@
 
 .btn-control {
   margin: 0 5px !important;
+}
+
+.App-Input {
+  display: block;
+  width: 100%;
+  color: rgb(36, 35, 42);
+  font-size: 16px;
+  margin: 0;
+  line-height: 20px;
+  min-height: 28px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+  background: rgb(251, 251, 251);
+  transition: all 0.1s ease 0s;
+  outline: none;
+}
+
+.App-Input:focus{
+  border: 2px solid rgb(124, 138, 255);
 }
